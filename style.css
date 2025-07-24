@@ -1,0 +1,147 @@
+/* 
+@font-face {
+font-family: "RalewayRegular";  
+src: url("fonts/Geologica/Geologica-VariableFont_CRSV,SHRP,slnt,wght.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal;
+ } */
+
+
+.logo {
+    width: 87.5%;
+}
+
+body {
+    font-family: Geologica;
+}
+
+.logos {
+    width: 40%;
+    display: flex;
+}
+
+header {
+    padding: 4% 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    background-color: #F4EBEB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.mos {
+    width: 12.5%;
+}
+
+nav {
+    font-size: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3%;
+    width: 45%;
+}
+
+
+a {
+    text-decoration: none;
+    color: #2D2D2D;
+}
+
+.split-background {
+  position: relative;
+  width: 100%;
+  height: 100px; /* Настройте высоту */
+  overflow: hidden;
+}
+
+.left-part {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 70%; /* Ширина левой прямоугольной части */
+  height: 100%;
+  background-color: #CD1740;
+  color: #F4EBEB;
+  padding-left: 3%;
+  padding-top: 25px;
+}
+
+.right-part {
+    display: flex;
+    justify-content: space-around;
+  
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40%; /* Ширина правой части (с учётом скоса) */
+  height: 100%;
+  background-color: #2D2D2D;
+  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+  padding-top: 25px;
+  padding-left: 10%;
+  padding-bottom: 60px;
+  display: flex;
+}
+
+.num {
+    color: #F4EBEB;
+}
+
+.pink {
+    color: #CD1740;
+}
+
+button {
+    background-color: #CD1740;
+    color: #F4EBEB;
+    border-radius: 10px;
+    border: 0;
+    font-weight: 600;
+    font-size: 100%;
+}
+
+.deliv {
+    height: 40px;
+    width: 35%;
+    
+}
+
+.first {
+    display: flex;
+    padding-top: 20px;
+}
+.forForm {
+    width: 55%;
+}
+
+.rem {
+    font-family: Russo one;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.rem h2 {
+    font-weight: 400;
+}
+
+.order {
+    font-weight: 600;
+    width: 70%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input {
+    height: 45%;
+}
