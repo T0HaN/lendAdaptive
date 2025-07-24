@@ -327,20 +327,24 @@ button {
 }
 
 .stageWork {
-    text-align: center;
+    margin-left: 3%;
+    text-align: left;
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .services-list {
     display: flex;
-    justify-content: space-between;
-    padding: 3% 20px;
+    justify-content: center;
+    padding: 3% 0;
     flex-wrap: wrap;
     gap: 15px;
 }
 
 .work-stage {
-    width: 20%;
+    width: calc(16.666% - 15px); /* 6 элементов в ряду с учетом gap */
+    min-width: 150px;
     background-color: #DBD4D4;
     border-radius: 20px;
     padding: 20px;
@@ -371,10 +375,281 @@ button {
 
 .work-stage button {
     padding: 8px 20px;
-    background-color: #333;
+    background-color: #CD1740;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.work-stage button:hover {
+    background-color: #a81234;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .work-stage {
+        width: calc(50% - 15px);
+    }
+
+}
+.firstBlock {
+    width: 20%;
+}
+
+.advantages-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3% 20px;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.advantage-card {
+    background-color: #DBD4D4;
+    min-width: 176px;
+    width: calc(25% - 20px);
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.advantage-icon {
+    background-color: #CD1740;
+    border-radius: 10px;
+    width: 74px;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.advantage-card h3 {
+    margin: 10px 0;
+    min-height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantage-card p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+@media (max-width: 1024px) {
+    .advantage-card {
+        width: calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .advantage-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .advantage-card {
+        width: 100%;
+    }
+}
+.application-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 3% 30px;
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.application-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+    order: 2; /* Картинка справа */
+}
+
+.application-form {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    order: 1; /* Форма слева */
+}
+
+.form-title {
+    font-family: 'Russo One', sans-serif;
+    margin-bottom: 30px;
+}
+
+.form-title h2 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.3;
+    color: #333;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input, 
+.contact-form button {
+    padding: 16px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.contact-form button {
+    background-color: #CD1740;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #b01538;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .application-block {
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+    
+    .application-image,
+    .application-form {
+        order: initial; /* Сброс порядка для мобильной версии */
+        max-width: 100%;
+    }
+    
+    .form-title h2 {
+        font-size: 28px;
+    }
+    
+    .contact-form input, 
+    .contact-form button {
+        padding: 14px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .application-block {
+        padding: 15px;
+    }
+    
+    .form-title h2 {
+        font-size: 24px;
+    }
+}
+.marks-gallery {
+  display: flex;
+  background-color: #1B80AD;;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  overflow: hidden; /* Скрывает изображения, которые не помещаются */
+}
+.marks-gallery img {
+  flex-shrink: 0; /* Запрещает сжатие */
+}
+
+.preLast {
+    padding: 3% 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+
+}
+
+.map {
+    min-width: 500px;
+    width: 60%;
+}
+.reviews-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.review-block img {
+    margin-top: -30%;
+}
+
+.review-block {
+    width: 25%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.review-author {
+    margin-top: 0;
+    color: #333;
+}
+
+.review-text {
+    margin-bottom: 0;
+    color: #555;
+    line-height: 1.5;
+}
+
+.photo-row {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+        }
+        
+        .photo-row img {
+            width: 30%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+        
+        /* Удаляем третье фото при ширине меньше 900px */
+        @media (max-width: 900px) {
+            .photo-row img:nth-child(3) {
+                display: none;
+            }
+            .photo-row img {
+                width: 50%;
+            }
+        }
+        
+        /* Удаляем второе фото при ширине меньше 600px */
+        @media (max-width: 600px) {
+            .photo-row img:nth-child(2) {
+                display: none;
+            }
+            .photo-row img {
+                width: 100%;
+            }
+        }
+
+.last {
+    padding: 3% 30px;
+
 }
