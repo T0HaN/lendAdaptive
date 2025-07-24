@@ -653,3 +653,67 @@ button {
     padding: 3% 30px;
 
 }
+
+.footer {
+  font-family: Arial, sans-serif;
+  padding: 30px 0;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.footer__left {
+  width: 60%;
+}
+
+.footer__right {
+  width: 35%;
+}
+
+.footer__title, .footer__subtitle {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer__company-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.footer__legal-info, .footer__contact, .footer__address {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer__contact a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__contact a:hover {
+  text-decoration: underline;
+}
+
+.footer__disclaimer {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.footer__disclaimer-link {
+  text-decoration: none;
+}
+
+.footer__disclaimer-link:hover {
+  text-decoration: underline;
+}
+
+footer button {
+    width: 80%;
+}
