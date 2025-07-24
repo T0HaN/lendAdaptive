@@ -1,25 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-</style>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Russo+One&display=swap');
-</style>
+    <title>Аккумуляторы с доставкой</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Russo+One&display=swap">
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
     <header>
         <div class="logos">
             <img src="images/logo.png" class="logo" alt="logotype">
-            <img src="images/moscow_coat.png" class="mos" alt="moscow_coat" >
+            <img src="images/moscow_coat.png" class="mos" alt="moscow_coat">
         </div>
-        <nav>
+        <nav id="main-nav">
             <a href="#">Вскрытие</a>
             <a href="#">Этапы работы</a>
             <a href="#">Преимущества</a>
@@ -27,20 +21,22 @@
             <a href="#">Контакты</a>
             <a href="#">Отзывы</a>
         </nav>
+        <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
     </header>
+
     <div class="split-background">
         <div class="left-part">
-            <p>Бесплатная доставка и квалифицированная</p>
-            <p>установка аккумуляторов по всей Москве и МО</p>
+            <p class="desktop-text">Бесплатная доставка и квалифицированная установка аккумуляторов по всей Москве и МО</p>
         </div>
         <div class="right-part">
-            <div class="num">
+            <div class="num desktop-num">
                 <p>+7 901 123 45 67</p>
                 <p>+7 901 123 45 67</p>
             </div>
             <button class="deliv">Заказать</button>
         </div>
     </div>
+
     <div class="first">
         <img src="images/image.png" class="forForm" alt="Пример">
         <div class="form">
@@ -57,8 +53,8 @@
                 <button type="submit">Отправить</button>
             </form>
         </div>
-        
     </div>
+
     <div class="second">
         <div class="tech">
             <div><img src="images/transports/icon_bike.png" alt="bike"></div>
@@ -77,272 +73,325 @@
             <span><p>Для грузовых</p><p>автомобилей</p></span>
         </div>
     </div>
+
     <div class="third">
         <div class="video">
             <video src="#" alt="Видео"></video>
-            <div class="video-placeholder">Видео</div> <!-- Надпись-заглушка -->
+            <div class="video-placeholder">Видео</div>
         </div>
     </div>
+
     <div class="battery-offers">
-    <div class="offer">
-        <div class="square"><img src="images/plus/icon_delivery.png" alt="Доставка"></div>
-        <div>
-            <h3>Бесплатная доставка</h3>
-            <p>Доставим аккумулятор в любую точку Москвы и области всего за 2 часа — быстро, удобно и без лишних затрат!</p>
-        </div>
-    </div>
-    
-    <div class="offer">
-        <div class="square"><img src="images/plus/icon_mechanic.png" alt="Скидки"></div>
-        <div>
-            <h3>Скидки до 2200 рублей</h3>
-            <p>Сдайте старый аккумулятор и получите скидку до 2200 ₽ на новый — выгодно и экологично!</p>
-        </div>
-    </div>
-    
-    <div class="offer">
-        <div class="square"><img src="images/plus/icon_car-search.png" alt="Установка"></div>
-        <div>
-            <h3>Бесплатная установка</h3>
-            <p>Наши специалисты приедут и установят аккумулятор прямо на месте — никаких скрытых платежей.</p>
-        </div>
-    </div>
-    
-    <div class="offer">
-        <div class="square"><img src="images/plus/icon_sale-box.png" alt="Обслуживание"></div>
-        <div>
-            <h3>Бесплатное обслуживание</h3>
-            <p>Мы заботимся о ваших аккумуляторах — бесплатное обслуживание на весь срок службы батареи.</p>
-        </div>
-    </div>
-    
-    <div class="offer">
-        <div class="square"><img src="images/plus/icon_car-cog.png" alt="Диагностика"></div>
-        <div>
-            <h3>Бесплатная диагностика</h3>
-            <p>Проверим стартер и генератор прямо на месте — вы точно будете знать, что нужно менять.</p>
-        </div>
-    </div>
-    
-    <div class="offer">
-        <div class="square"><img src="images/plus/icon_save-fill.png" alt="Гарантия"></div>
-        <div>
-            <h3>Гарантия до 5 лет</h3>
-            <p>Мы уверены в качестве — даём до 5 лет гарантии на установку и работу аккумулятора.</p>
-        </div>
-    </div>
-</div>
-<div class="stageWork">
-    <h1>Этапы работы</h1>
-    <div class="services-list">
-        <div class="work-stage firstBlock">
-            <img src="images/exp/Group 29.png" alt="Заявка">
-            <h2>Заявка</h2>
-            <p>Оставьте заявку онлайн или свяжитесь с нами по телефону.</p>
-            <button>Заказать</button>
-        </div>
-        <div class="work-stage">
-            <img src="images/exp/Group 30.png" alt="Подбор">
-            <h2>Подбор</h2>
-        </div>
-        <div class="work-stage">
-            <img src="images/exp/Group 31.png" alt="Доставка">
-            <h2>Доставка</h2>
-        </div>
-        <div class="work-stage">
-            <img src="images/exp/Group 32.png" alt="Замена">
-            <h2>Замена</h2>
-        </div>
-        <div class="work-stage">
-            <img src="images/exp/Group 33.png" alt="Гарантия">
-            <h2>Гарантия</h2>
-        </div>
-        <div class="work-stage">
-            <img src="images/exp/Group 34.png" alt="Утилизация">
-            <h2>Утилизация</h2>
-        </div>
-    </div>
-</div>
-<div>
-    <h1>Почему нас выбирают</h1>
-    <div class="advantages-grid">
-        <div class="advantage-card">
-            <div class="advantage-icon">
-                <img src="images/forWhat/icon_good-two.png" alt="Качество">
+        <div class="offer">
+            <div class="square"><img src="images/plus/icon_delivery.png" alt="Доставка"></div>
+            <div class="offer-content">
+                <h3>Бесплатная доставка</h3>
+                <p>Доставим аккумулятор в любую точку Москвы и области всего за 2 часа — быстро, удобно и без лишних затрат!</p>
             </div>
-            <h3>Качественно</h3>
-            <p>Подбор аккумулятора опытными специалистами. Гарантия, установка и полное обслуживание.</p>
-        </div>
-
-        <div class="advantage-card">
-            <div class="advantage-icon">
-                <img src="images/forWhat/icon_speed.png" alt="Скорость">
-            </div>
-            <h3>Скорость</h3>
-            <p>Срочная доставка аккумулятора за 1 час по Москве и области — прямо к вашему автомобилю.</p>
-        </div>
-
-        <div class="advantage-card">
-            <div class="advantage-icon">
-                <img src="images/forWhat/icon_hand-coin.png" alt="Выгода">
-            </div>
-            <h3>Выгодно</h3>
-            <p>Принимаем старый аккумулятор на утилизацию или в зачёт нового — по честной и выгодной цене.</p>
-        </div>
-
-        <div class="advantage-card">
-            <div class="advantage-icon">
-                <img src="images/forWhat/icon_charger.png" alt="Зарядка">
-            </div>
-            <h3>Села? Зарядим!</h3>
-            <p>Прикурим, проведём диагностику и восстановим старый аккумулятор в нашем сервисе.</p>
-        </div>
-
-        <div class="advantage-card">
-            <div class="advantage-icon">
-                <img src="images/forWhat/icon_free.png" alt="Бесплатно">
-            </div>
-            <h3>Бесплатно</h3>
-            <p>Доставка, установка аккумулятора и диагностика электрооборудования — без лишних затрат.</p>
-        </div>
-
-        <div class="advantage-card">
-            <div class="advantage-icon">
-                <img src="images/forWhat/icon_good.png" alt="Надёжность">
-            </div>
-            <h3>Надёжно</h3>
-            <p>Официальная гарантия до 5 лет и полное послегарантийное обслуживание.</p>
-        </div>
-
-        <div class="advantage-card">
-            <div class="advantage-icon">
-                <img src="images/forWhat/icon_date-time.png" alt="Рассрочка">
-            </div>
-            <h3>Рассрочка</h3>
-            <p>Покупка аккумулятора в рассрочку или кредит — от 3 до 36 месяцев.</p>
-        </div>
-
-        <div class="advantage-card">
-            <div class="advantage-icon">
-                <img src="images/forWhat/icon_payment.png" alt="Удобство">
-            </div>
-            <h3>Удобно</h3>
-            <p>Оплата наличными или картой — прямо на месте, без лишних хлопот.</p>
-        </div>
-    </div>
-</div>
-
-<div class="application-block">
-    <div class="application-form">
-        <div class="form-title">
-            <h2>Оставить заявку</h2>
         </div>
         
-        <form class="contact-form" action="#">
-            <input type="text" placeholder="Ваше имя">
-            <input type="tel" placeholder="Ваш номер телефона">
-            <input type="text" placeholder="Ваша модель машины">
-            <button type="submit">Отправить</button>
-        </form>
+        <div class="offer">
+            <div class="square"><img src="images/plus/icon_mechanic.png" alt="Скидки"></div>
+            <div class="offer-content">
+                <h3>Скидки до 2200 рублей</h3>
+                <p>Сдайте старый аккумулятор и получите скидку до 2200 ₽ на новый — выгодно и экологично!</p>
+            </div>
+        </div>
+        
+        <div class="offer">
+            <div class="square"><img src="images/plus/icon_car-search.png" alt="Установка"></div>
+            <div class="offer-content">
+                <h3>Бесплатная установка</h3>
+                <p>Наши специалисты приедут и установят аккумулятор прямо на месте — никаких скрытых платежей.</p>
+            </div>
+        </div>
+        
+        <div class="offer">
+            <div class="square"><img src="images/plus/icon_sale-box.png" alt="Обслуживание"></div>
+            <div class="offer-content">
+                <h3>Бесплатное обслуживание</h3>
+                <p>Мы заботимся о ваших аккумуляторах — бесплатное обслуживание на весь срок службы батареи.</p>
+            </div>
+        </div>
+        
+        <div class="offer">
+            <div class="square"><img src="images/plus/icon_car-cog.png" alt="Диагностика"></div>
+            <div class="offer-content">
+                <h3>Бесплатная диагностика</h3>
+                <p>Проверим стартер и генератор прямо на месте — вы точно будете знать, что нужно менять.</p>
+            </div>
+        </div>
+        
+        <div class="offer">
+            <div class="square"><img src="images/plus/icon_save-fill.png" alt="Гарантия"></div>
+            <div class="offer-content">
+                <h3>Гарантия до 5 лет</h3>
+                <p>Мы уверены в качестве — даём до 5 лет гарантии на установку и работу аккумулятора.</p>
+            </div>
+        </div>
     </div>
-    <img src="images/image.png" class="application-image" alt="Пример автомобиля">
-</div>
-<div class="marks-gallery">
-  <img src="images/marks/image 15.png" alt="">
-  <img src="images/marks/image 16.png" alt="">
-  <img src="images/marks/image 17.png" alt="">
-  <img src="images/marks/image 18.png" alt="">
-  <img src="images/marks/image 19.png" alt="">
-  <img src="images/marks/image 20.png" alt="">
-  <img src="images/marks/image 21.png" alt="">
-  <img src="images/marks/image 22.png" alt="">
-</div>
 
-<div class="preLast">
-    <div>
-         <h1>Наши адреса</h1>
-    
-    <div class="address-block">
-        <div class="location-name"><img src="images/addres/image 26.png" alt="">Южная:</div>
-        <div class="address"><img src="images/addres/ph_map-pin-fill.png" alt="">Варшавское шоссе 132Б</div>
+    <div class="stageWork">
+        <h1>Этапы работы</h1>
+        <div class="services-list">
+            <div class="work-stage firstBlock">
+                <img src="images/exp/Group 29.png" alt="Заявка">
+                <h2>Заявка</h2>
+                <p>Оставьте заявку онлайн или свяжитесь с нами по телефону.</p>
+                <button>Заказать</button>
+            </div>
+            <div class="work-stage">
+                <img src="images/exp/Group 30.png" alt="Подбор">
+                <h2>Подбор</h2>
+            </div>
+            <div class="work-stage">
+                <img src="images/exp/Group 31.png" alt="Доставка">
+                <h2>Доставка</h2>
+            </div>
+            <div class="work-stage">
+                <img src="images/exp/Group 32.png" alt="Замена">
+                <h2>Замена</h2>
+            </div>
+            <div class="work-stage">
+                <img src="images/exp/Group 33.png" alt="Гарантия">
+                <h2>Гарантия</h2>
+            </div>
+            <div class="work-stage">
+                <img src="images/exp/Group 34.png" alt="Утилизация">
+                <h2>Утилизация</h2>
+            </div>
+        </div>
     </div>
-    
-    <div class="address-block">
-        <div class="location-name"><img src="images/addres/image 26.png" alt="">Рязанский проспект:</div>
-        <div class="address"><img src="images/addres/ph_map-pin-fill.png" alt="">Рязанский проспект 91к1</div>
+
+    <div class="advantages-container">
+        <h1>Почему нас выбирают</h1>
+        <div class="advantages-grid">
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <img src="images/forWhat/icon_good-two.png" alt="Качество">
+                </div>
+                <h3>Качественно</h3>
+                <p>Подбор аккумулятора опытными специалистами. Гарантия, установка и полное обслуживание.</p>
+            </div>
+
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <img src="images/forWhat/icon_speed.png" alt="Скорость">
+                </div>
+                <h3>Скорость</h3>
+                <p>Срочная доставка аккумулятора за 1 час по Москве и области — прямо к вашему автомобилю.</p>
+            </div>
+
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <img src="images/forWhat/icon_hand-coin.png" alt="Выгода">
+                </div>
+                <h3>Выгодно</h3>
+                <p>Принимаем старый аккумулятор на утилизацию или в зачёт нового — по честной и выгодной цене.</p>
+            </div>
+
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <img src="images/forWhat/icon_charger.png" alt="Зарядка">
+                </div>
+                <h3>Села? Зарядим!</h3>
+                <p>Прикурим, проведём диагностику и восстановим старый аккумулятор в нашем сервисе.</p>
+            </div>
+
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <img src="images/forWhat/icon_free.png" alt="Бесплатно">
+                </div>
+                <h3>Бесплатно</h3>
+                <p>Доставка, установка аккумулятора и диагностика электрооборудования — без лишних затрат.</p>
+            </div>
+
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <img src="images/forWhat/icon_good.png" alt="Надёжность">
+                </div>
+                <h3>Надёжно</h3>
+                <p>Официальная гарантия до 5 лет и полное послегарантийное обслуживание.</p>
+            </div>
+
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <img src="images/forWhat/icon_date-time.png" alt="Рассрочка">
+                </div>
+                <h3>Рассрочка</h3>
+                <p>Покупка аккумулятора в рассрочку или кредит — от 3 до 36 месяцев.</p>
+            </div>
+
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <img src="images/forWhat/icon_payment.png" alt="Удобство">
+                </div>
+                <h3>Удобно</h3>
+                <p>Оплата наличными или картой — прямо на месте, без лишних хлопот.</p>
+            </div>
+        </div>
     </div>
-    
-    <div class="address-block">
-        <div class="location-name"><img src="images/addres/image 26.png" alt="">Перово:</div>
-        <div class="address"><img src="images/addres/ph_map-pin-fill.png" alt="">Шоссе Энтузиастов 80к1</div>
+
+    <div class="application-block">
+        <div class="application-form">
+            <div class="form-title">
+                <h2>Оставить заявку</h2>
+            </div>
+            
+            <form class="contact-form" action="#">
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel" placeholder="Ваш номер телефона">
+                <input type="text" placeholder="Ваша модель машины">
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+        <img src="images/image.png" class="application-image" alt="Пример автомобиля">
     </div>
-    
-    <div class="address-block">
-        <div class="location-name"><img src="images/addres/image 26.png" alt="">Отрадное:</div>
-        <div class="address"><img src="images/addres/ph_map-pin-fill.png" alt="">ул. Отрадная 15</div>
+
+    <div class="marks-gallery">
+        <div class="marks-scroller">
+            <img src="images/marks/image 15.png" alt="">
+            <img src="images/marks/image 16.png" alt="">
+            <img src="images/marks/image 17.png" alt="">
+            <img src="images/marks/image 18.png" alt="">
+            <img src="images/marks/image 19.png" alt="">
+            <img src="images/marks/image 20.png" alt="">
+            <img src="images/marks/image 21.png" alt="">
+            <img src="images/marks/image 22.png" alt="">
+        </div>
     </div>
-    
-    <div class="address-block">
-        <div class="location-name"><img src="images/addres/image 26.png" alt="">Новокосино:</div>
-        <div class="address"><img src="images/addres/ph_map-pin-fill.png" alt="">Реутов, ул. Фабричная 15</div>
+
+    <div class="preLast">
+        <div class="addresses-container">
+            <h1>Наши адреса</h1>
+            <div class="address-row">
+                <div class="address-block">
+                    <div class="location-name"><img src="images/addres/image 26.png" alt="">Южная:</div>
+                    <div class="address"><img src="images/addres/ph_map-pin-fill.png" alt="">Варшавское шоссе 132Б</div>
+                </div>
+                
+                <div class="address-block">
+                    <div class="location-name"><img src="images/addres/image 26.png" alt="">Рязанский проспект:</div>
+                    <div class="address"><img src="images/addres/ph_map-pin-fill.png" alt="">Рязанский проспект 91к1</div>
+                </div>
+            </div>
+            
+            <div class="address-row">
+                <div class="address-block">
+                    <div class="location-name"><img src="images/addres/image 26.png" alt="">Перово:</div>
+                    <div class="address"><img src="images/addres/ph_map-pin-fill.png" alt="">Шоссе Энтузиастов 80к1</div>
+                </div>
+                
+                <div class="address-block">
+                    <div class="location-name"><img src="images/addres/image 26.png" alt="">Отрадное:</div>
+                    <div class="address"><img src="images/addres/ph_map-pin-fill.png" alt="">ул. Отрадная 15</div>
+                </div>
+            </div>
+            
+            <div class="address-row">
+                <div class="address-block">
+                    <div class="location-name"><img src="images/addres/image 26.png" alt="">Новокосино:</div>
+                    <div class="address"><img src="images/addres/ph_map-pin-fill.png" alt="">Реутов, ул. Фабричная 15</div>
+                </div>
+            </div>
+        </div>
+        <img src="images/vrem фото.png" class="map" alt="">
     </div>
-    </div>
-    <img src="images/vrem фото.png" class="map" alt="">
-</div>
-<div class="reviews-container">
-        <!-- Блок 1 -->
+
+    <div class="reviews-container">
+    <div class="reviews-scroller">
         <div class="review-block">
             <img src="images/com/Ellipse 2.png" alt="">
             <h3 class="review-author">Александр Петров</h3>
             <p class="review-text">Очень доволен обслуживанием! Заказал аккумулятор утром — через 40 минут уже был у меня, установили быстро и аккуратно. Всё объяснили, дали гарантийный талон. Спасибо за оперативность и профессионализм!</p>
         </div>
 
-        <!-- Блок 2 -->
         <div class="review-block">
             <img src="images/com/Ellipse 2-1.png" alt="">
             <h3 class="review-author">Ирина Соколова</h3>
             <p class="review-text">Машина не заводилась, подумала, что проблема в аккумуляторе. Позвонила в Аккумуляторы — приехали, всё проверили, установили новый аккумулятор и бесплатно протестировали генератор. Очень вежливые ребята и честный подход. Рекомендую!</p>
         </div>
 
-        <!-- Блок 3 -->
         <div class="review-block">
             <img src="images/com/Ellipse 2-2.png" alt="">
             <h3 class="review-author">Максим Воронцов</h3>
             <p class="review-text">Обратился по совету друга — не пожалел. Помогли с выбором аккумулятора, привезли в течение часа, всё поставили и проверили. Понравилось, что всё прозрачно: цены, сроки, гарантия. Буду обращаться ещё и советовать знакомым!</p>
         </div>
     </div>
+</div>
+
     <div class="last">
         <h1>Наши работы</h1>
         <div class="photo-row">
-        <img src="images/Group 25.png" alt="Фото 1">
-        <img src="images/Group 26.png" alt="Фото 2">
-        <img src="images/Group 27.png" alt="Фото 3">
-    </div>
-    </div>
-    <footer class="footer" style="background-color: #2D2D2D; color: #fff;">
-  <div class="footer__container">
-    <div class="footer__left">
-      <h2 class="footer__title">Контакты организации:</h2>
-      
-      <div class="footer__company-info">
-        <p class="footer__company-name">ООО «Гдемойакб»</p>
-        <p class="footer__legal-info">ОГРН 1185053057749</p>
-        <p class="footer__legal-info">ИНН/КПП 5001122988/500101001</p>
-        <p class="footer__contact">Телефон: <a href="tel:+7123456789" style="color: #fff;">+7(123)456 789</a></p>
-        <p class="footer__contact">E-mail: <a href="mailto:gdemoyakb@yandex.ru" style="color: #fff;">gdemoyakb@yandex.ru</a></p>
-        <p class="footer__address">Адрес нашего офиса: Московская область, г.Москва, ул.</p>
-      </div>
+            <img src="images/Group 25.png" alt="Фото 1">
+            <img src="images/Group 26.png" alt="Фото 2">
+            <img src="images/Group 27.png" alt="Фото 3">
+        </div>
     </div>
 
-    <div class="footer__right">
-      <button>Заказать</button>
-      <p class="footer__disclaimer" style="color: #ccc;">
-        Сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, 
-        определенной положениями Статьи 437 (2) Гражданского кодекса Российской Федерации. 
-        <a href="#" class="footer__disclaimer-link" style="color: #fff;">Подробнее</a>
-      </p>
-    </div>
-  </div>
-</footer>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__left">
+                <h2 class="footer__title">Контакты организации:</h2>
+                
+                <div class="footer__company-info">
+                    <p class="footer__company-name">ООО «Гдемойакб»</p>
+                    <p class="footer__legal-info">ОГРН 1185053057749</p>
+                    <p class="footer__legal-info">ИНН/КПП 5001122988/500101001</p>
+                    <p class="footer__contact">Телефон: <a href="tel:+7123456789">+7(123)456 789</a></p>
+                    <p class="footer__contact">E-mail: <a href="mailto:gdemoyakb@yandex.ru">gdemoyakb@yandex.ru</a></p>
+                    <p class="footer__address">Адрес нашего офиса: Московская область, г.Москва, ул.</p>
+                </div>
+            </div>
+
+            <div class="footer__right">
+                <button>Заказать</button>
+                <p class="footer__disclaimer">
+                    Сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, 
+                    определенной положениями Статьи 437 (2) Гражданского кодекса Российской Федерации. 
+                    <a href="#" class="footer__disclaimer-link">Подробнее</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const nav = document.getElementById('main-nav');
+            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Hide nav on load for mobile
+        window.addEventListener('load', function() {
+            if (window.innerWidth <= 768) {
+                document.getElementById('main-nav').style.display = 'none';
+            }
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            const nav = document.getElementById('main-nav');
+            if (window.innerWidth > 768) {
+                const p = document.querySelector('.left-part');
+                p.innerHTML = `<p class="desktop-text">Бесплатная доставка и квалифицированная установка аккумуляторов по всей Москве и МО</p>`
+                const r = document.querySelector('.right-part');
+                r.innerHTML = `<div class="num desktop-num">
+                <p>+7 901 123 45 67</p>
+                <p>+7 901 123 45 67</p>
+            </div>
+            <button class="deliv">Заказать</button>`
+                nav.style.display = 'flex';
+            } else {
+                nav.style.display = 'none';
+                const p = document.querySelector('.left-part');
+                p.innerHTML = `<div class="num desktop-num">
+                <p>+7 901 123 45 67</p>
+                <p>+7 901 123 45 67</p>
+            </div>`
+                const r = document.querySelector('.right-part');
+                r.innerHTML = `<button class="deliv">Заказать</button>`
+            }
+        });
+    </script>
 </body>
 </html>
